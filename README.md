@@ -6,7 +6,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Este projeto é um app simples, onde desenvolvi pelo curso da Rocketseat visando aprender React Native e me aprofundar melhor na tecnologia.
+Este projeto é um app simples de evento, onde desenvolvi pelo curso da Rocketseat visando aprender React Native e me aprofundar melhor na tecnologia.
 
 ##
 
