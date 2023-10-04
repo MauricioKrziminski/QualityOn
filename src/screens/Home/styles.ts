@@ -38,6 +38,18 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  button2: {
+    width: "100%",
+    height: 56,
+    borderRadius: 10,
+    backgroundColor: "#31cf67",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+   buttonText2: {
+    color: "#fff",
+    fontSize: 24,
+  },
   form: {
     width: "100%",
     flexDirection: "row",

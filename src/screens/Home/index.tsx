@@ -81,6 +81,12 @@ export function Home() {
           </Text>
         )}
       />
+      <TouchableOpacity
+        style={styles.button2}
+        onPress={() => navigation.navigate("Login")}
+      >
+        <Text style={styles.buttonText2}>Voltar para o Login</Text>
+      </TouchableOpacity>
     </View>
   )
 }

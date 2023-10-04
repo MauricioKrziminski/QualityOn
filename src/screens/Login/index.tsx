@@ -17,6 +17,7 @@ export function Login() {
 
   function handleLogin() {
     navigation.navigate("Home")
+    Alert.alert("Login realizado com sucesso!")
   }
 
   function handleRegister() {

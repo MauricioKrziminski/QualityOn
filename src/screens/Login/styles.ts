@@ -27,6 +27,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#31cf67",
     alignItems: "center",
     justifyContent: "center",
+    marginBottom: 210,
   },
   buttonText: {
     color: "#fff",
@@ -36,6 +37,5 @@ export const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     textAlign: 'center',
-    paddingTop: 200,
   },
 });
