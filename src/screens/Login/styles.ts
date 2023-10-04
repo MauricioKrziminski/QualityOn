@@ -6,18 +6,11 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#131016",
     padding: 24,
-    justifyContent: "center",
-  },
+    },
   logo: {
-    flex: 1,
     alignSelf: "center",
     width: '50%', 
-    marginBottom: 20, 
     resizeMode: "contain",
-  },
-  aaa: {
-    flexDirection: "column",
-    // marginBottom: 240,
   },
   input: {
     backgroundColor: "#1f1e25",
@@ -34,7 +27,6 @@ export const styles = StyleSheet.create({
     backgroundColor: "#31cf67",
     alignItems: "center",
     justifyContent: "center",
-    marginBottom: 230,
   },
   buttonText: {
     color: "#fff",
@@ -44,5 +36,6 @@ export const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     textAlign: 'center',
+    paddingTop: 200,
   },
 });

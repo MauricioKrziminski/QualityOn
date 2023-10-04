@@ -1,3 +1,4 @@
+// Home.tsx
 import React, { useState } from "react"
 import {
   Text,
@@ -9,8 +10,10 @@ import {
 } from "react-native"
 import { styles } from "./styles"
 import { Participant } from "../../components/Participant"
+import { useNavigation } from "@react-navigation/native"
 
 export function Home() {
+  const navigation = useNavigation()
   const [participants, setParticipants] = useState<string[]>([])
   const [participantName, setParticipantName] = useState("")
 
@@ -22,8 +25,7 @@ export function Home() {
 
       setParticipants((prevState) => [...prevState, participantName])
       setParticipantName("")
-    }
-    else {
+    } else {
       Alert.alert("Erro", "Digite o nome do participante")
     }
   }
@@ -43,10 +45,11 @@ export function Home() {
       },
     ])
   }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}>Evento dos Maumis</Text>
-      <Text style={styles.eventDate}>Sexta, 4 de novembro de 2022.</Text>
+      <Text style={styles.eventName}>Evento QualityON</Text>
+      <Text style={styles.eventDate}>A definir.</Text>
       <View style={styles.form}>
         <TextInput
           style={styles.input}

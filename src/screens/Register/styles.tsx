@@ -7,12 +7,17 @@ export const styles = StyleSheet.create({
     padding: 24,
     justifyContent: "center",
   },
+  title: {
+    color: "#fff",
+    fontSize: 36,
+    fontWeight: "bold",
+    marginTop: 30,
+  },
   bbb: {
     flex: 1,
     flexDirection: "column",
     justifyContent: "center",
-    marginTop: 200,
-    marginBottom: 200,
+    marginBottom: 60,
   },
   input: {
     backgroundColor: "#1f1e25",

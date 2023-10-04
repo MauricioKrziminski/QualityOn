@@ -1,27 +1,24 @@
+// Register.tsx
 import React, { useState } from "react"
 import { View, TextInput, TouchableOpacity, Text, Alert } from "react-native"
 import { styles } from "./styles"
+import { useNavigation } from "@react-navigation/native"
 
-interface RegisterProps {
-  toggleRegister: () => void
-}
-
-export function Register({ toggleRegister }: RegisterProps) {
+export function Register() {
+  const navigation = useNavigation()
   const [email, setMail] = useState("")
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
 
-  function handleRegister() {
-    if (email && username && password) {
-      toggleRegister()
-    } else {
-      Alert.alert("Campos obrigatórios", "Por favor, preencha todos os campos")
-    }
+  function goBackLogin() {
+    navigation.navigate("Login")
+    Alert.alert("Cadastro realizado com sucesso!")
   }
 
   return (
     <View style={styles.container}>
-      <View style = {styles.bbb}>
+      <Text style={styles.title}>Cadastro</Text>
+      <View style={styles.bbb}>
         <TextInput
           style={styles.input}
           placeholder="E-mail"
@@ -45,9 +42,10 @@ export function Register({ toggleRegister }: RegisterProps) {
           value={password}
         />
       </View>
-        <TouchableOpacity style={styles.button} onPress={handleRegister}>
-          <Text style={styles.buttonText}>Registrar</Text>
-        </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button} onPress={goBackLogin}>
+        <Text style={styles.buttonText}>Cadastrar</Text>
+      </TouchableOpacity>
     </View>
   )
 }
