@@ -49,9 +49,10 @@ export function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>Evento QualityON</Text>
-      <Text style={styles.eventDate}>A definir.</Text>
+      <Text style={styles.eventDate}>7 de outubro de 2023</Text>
       <View style={styles.form}>
         <TextInput
+          accessibilityLabel="btn-participant"
           style={styles.input}
           placeholder="Nome do participante"
           placeholderTextColor={"#6b6b6b"}
@@ -59,7 +60,7 @@ export function Home() {
           value={participantName}
         />
 
-        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd} accessibilityLabel="btn-participant-add">
           <Text style={styles.buttonText}> + </Text>
         </TouchableOpacity>
       </View>
@@ -84,6 +85,7 @@ export function Home() {
       <TouchableOpacity
         style={styles.button2}
         onPress={() => navigation.navigate("Login")}
+        accessibilityLabel="btn-back-login"
       >
         <Text style={styles.buttonText2}>Voltar para o Login</Text>
       </TouchableOpacity>

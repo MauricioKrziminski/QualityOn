@@ -28,6 +28,7 @@ export function Login() {
     <View style={styles.container}>
       <Image source={require("../../../assets/logo.png")} style={styles.logo} />
       <TextInput
+        accessibilityLabel="input-login-name"
         style={styles.input}
         placeholder="Nome"
         placeholderTextColor={"#6b6b6b"}
@@ -35,6 +36,7 @@ export function Login() {
         value={username}
       />
       <TextInput
+        accessibilityLabel="input-login-password"
         style={styles.input}
         placeholder="Senha"
         placeholderTextColor={"#6b6b6b"}
@@ -42,10 +44,10 @@ export function Login() {
         onChangeText={setPassword}
         value={password}
       />
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
+      <TouchableOpacity style={styles.button} onPress={handleLogin} accessibilityLabel="btn-login">
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
-      <Text style={styles.registerText} onPress={handleRegister}>
+      <Text style={styles.registerText} onPress={handleRegister} accessibilityLabel="btn-register">
         Não possui uma conta? Cadastra-se
       </Text>
     </View>

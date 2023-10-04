@@ -20,6 +20,7 @@ export function Register() {
       <Text style={styles.title}>Cadastro</Text>
       <View style={styles.bbb}>
         <TextInput
+          accessibilityLabel="input-mail"
           style={styles.input}
           placeholder="E-mail"
           placeholderTextColor={"#6b6b6b"}
@@ -27,6 +28,7 @@ export function Register() {
           value={email}
         />
         <TextInput
+          accessibilityLabel="input-name"
           style={styles.input}
           placeholder="Nome"
           placeholderTextColor={"#6b6b6b"}
@@ -34,6 +36,7 @@ export function Register() {
           value={username}
         />
         <TextInput
+          accessibilityLabel="input-password"
           style={styles.input}
           placeholder="Senha"
           placeholderTextColor={"#6b6b6b"}
@@ -43,7 +46,7 @@ export function Register() {
         />
       </View>
 
-      <TouchableOpacity style={styles.button} onPress={goBackLogin}>
+      <TouchableOpacity style={styles.button} onPress={goBackLogin} accessibilityLabel="btn-register">
         <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
     </View>

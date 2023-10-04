@@ -12,7 +12,7 @@ export function Participant({ name, onRemove }: Props) {
     <View style={styles.container}>
       <Text style={styles.name}>{name}</Text>
 
-      <TouchableOpacity style={styles.button} onPress={onRemove}>
+      <TouchableOpacity style={styles.button} onPress={onRemove} accessibilityLabel="btn-participant-dlt">
         <Text style={styles.buttonText}>-</Text>
       </TouchableOpacity>
     </View>

@@ -37,5 +37,7 @@ export const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     textAlign: 'center',
+    position: 'relative',
+    top: -40
   },
 });
