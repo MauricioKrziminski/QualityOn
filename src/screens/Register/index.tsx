@@ -3,9 +3,12 @@ import React, { useState } from "react"
 import { View, TextInput, TouchableOpacity, Text, Alert } from "react-native"
 import { styles } from "./styles"
 import { useNavigation } from "@react-navigation/native"
+import {ParamListBase} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 export function Register() {
-  const navigation = useNavigation()
+  // const navigation = useNavigation()
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const [email, setMail] = useState("")
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")

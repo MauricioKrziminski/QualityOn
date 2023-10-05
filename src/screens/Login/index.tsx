@@ -1,4 +1,6 @@
 import { useNavigation } from "@react-navigation/native"
+import {ParamListBase} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import React, { useState } from "react"
 import {
   Alert,
@@ -11,7 +13,8 @@ import {
 import { styles } from "./styles"
 
 export function Login() {
-  const navigation = useNavigation()
+  // const navigation = useNavigation()
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
 

@@ -11,9 +11,12 @@ import {
 import { styles } from "./styles"
 import { Participant } from "../../components/Participant"
 import { useNavigation } from "@react-navigation/native"
+import {ParamListBase} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
 export function Home() {
-  const navigation = useNavigation()
+  // const navigation = useNavigation()
+  const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const [participants, setParticipants] = useState<string[]>([])
   const [participantName, setParticipantName] = useState("")
 

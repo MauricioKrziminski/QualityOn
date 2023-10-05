@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "qualityOn",
-    "slug": "qualityOn",
+    "name": "qualityon",
+    "slug": "qualityon",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,10 +24,16 @@
       },
       "config": {
         "minSdkVersion": 21
-      }
+      },
+      "package": "com.joaodevtc.qualityon"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "87228cad-80bc-45b8-b844-72ad3ed1b146"
+      }
     }
   }
 }
